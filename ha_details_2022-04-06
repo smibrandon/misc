@@ -1,0 +1,57 @@
+System Health
+
+version: core-2022.4.0
+installation_type: Home Assistant OS
+dev: false
+hassio: true
+docker: true
+user: root
+virtualenv: false
+python_version: 3.9.9
+os_name: Linux
+os_version: 5.10.103-v8
+arch: aarch64
+timezone: America/New_York
+
+
+GitHub API: ok
+GitHub Content: ok
+GitHub Web: ok
+GitHub API Calls Remaining: 4121
+Installed Version: 1.24.3
+Stage: running
+Available Repositories: 73
+Downloaded Repositories: 1
+
+
+logged_in: true
+subscription_expiration: April 25, 2022, 8:00 PM
+relayer_connected: true
+remote_enabled: true
+remote_connected: true
+alexa_enabled: false
+google_enabled: true
+remote_server: us-east-1-1.ui.nabu.casa
+can_reach_cert_server: ok
+can_reach_cloud_auth: ok
+can_reach_cloud: ok
+
+
+host_os: Home Assistant OS 7.6
+update_channel: stable
+supervisor_version: supervisor-2022.03.5
+docker_version: 20.10.9
+disk_total: 29.1 GB
+disk_used: 10.2 GB
+healthy: true
+supported: true
+board: rpi3-64
+supervisor_api: ok
+version_api: ok
+installed_addons: Terminal & SSH (9.3.0), Check Home Assistant configuration (3.10.0), Assistant Relay (0.7.4), File editor (5.3.3), Home Assistant Google Drive Backup (0.106.2), Samba share (9.5.1), Log Viewer (0.13.0), ESPHome (2022.3.2), SSH & Web Terminal (10.1.1)
+
+
+dashboards: 6
+resources: 27
+views: 32
+mode: storage
