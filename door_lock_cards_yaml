@@ -1,0 +1,51 @@
+type: custom:layout-card
+layout_type: grid
+layout:
+  grid-template-columns: 50% 50%
+cards:
+  - entity: sensor.front_door_state
+    label: Front Door
+    show_label: true
+    show_name: false
+    show_icon: true
+    color_type: card
+    layout: icon_label
+    type: custom:button-card
+    aspect_ratio: 5/1
+    icon: mdi:door-closed-lock
+    state:
+      - value: Open
+        color: red
+        icon: mdi:door-open
+        styles:
+          card:
+            - animation: blink 2s ease infinite
+      - value: Closed
+        color: blue
+        icon: mdi:door-closed
+      - value: Locked
+        color: rgb(29,29,29)
+        icon: mdi:door-closed-lock
+  - entity: sensor.back_door_state
+    label: Back Door
+    show_label: true
+    show_name: false
+    show_icon: true
+    color_type: card
+    layout: icon_label
+    type: custom:button-card
+    aspect_ratio: 5/1
+    icon: mdi:door-closed-loced
+    state:
+      - value: Open
+        color: red
+        icon: mdi:door-open
+        styles:
+          card:
+            - animation: blink 2s ease infinite
+      - value: Closed
+        color: blue
+        icon: mdi:door-closed
+      - value: Locked
+        color: rgb(29,29,29)
+        icon: mdi:door-closed-lock
