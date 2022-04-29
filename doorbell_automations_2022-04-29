@@ -1,0 +1,30 @@
+### AUTOMATION 1 (PRIMARY) ### 
+trigger: (removed for simplicity)
+condition:
+  - condition: state
+    entity_id: input_boolean.doorbell_constraint
+    state: 'off'
+action:
+  - service: input_boolean.turn_on
+    data: {}
+    target:
+      entity_id: input_boolean.doorbell_constraint
+  - service: (additional actions removed for simplicity)
+
+### AUTOMATION 2 ###
+trigger:
+  - platform: state
+    entity_id: input_boolean.doorbell_constraint
+    to: 'on'
+action:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 10
+      milliseconds: 0
+  - service: input_boolean.turn_off
+    target:
+      entity_id: input_boolean.doorbell_constraint
+
+### HELPER ###
+input_boolean.doorbell_constraint
